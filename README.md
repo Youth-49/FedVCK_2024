@@ -1,4 +1,5 @@
-# FedVCK_2024
+# FedVCK@AAAI 2025
+
 FedVCK: Non-IID Robust and Communication-Efficient Federated Learning via Valuable Condensed Knowledge for Medical Image Analysis, Accepted by AAAI 2025
 
 
