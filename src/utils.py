@@ -5,7 +5,7 @@ import numpy as np
 import torch
 from torch.optim.optimizer import Optimizer, required
 from torch.distributions.multivariate_normal import MultivariateNormal
-from src.models import ResNet18, ConvNet, LeNet, SimpleCNN, ResNet18BN
+from src.models import ResNet18, ConvNet, ResNet18BN
 from .models import Projector
 import torch.nn.functional as F
 
@@ -225,16 +225,6 @@ def get_model(model_name, dataset_info):
             net_norm='batchnorm',
             net_pooling='avgpooling',
             im_size=dataset_info['im_size']
-        )
-    elif model_name == "LeNet":
-        model = LeNet(
-            channel=dataset_info['channel'],
-            num_classes=dataset_info['num_classes']
-        )
-    elif model_name == "SimpleCNN":
-        model = SimpleCNN(
-            channel=dataset_info['channel'],
-            num_classes=dataset_info['num_classes']
         )
     elif model_name == "ResNet":
         model = ResNet18(
