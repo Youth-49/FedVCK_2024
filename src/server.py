@@ -237,7 +237,7 @@ class Server:
             all_synthetic_label.append(synthetic_label)
             logging.info(len(synthetic_data))
 
-            preserve_thres = self.communication_rounds // 2
+            preserve_thres = max(10, self.communication_rounds // 2)
             logging.info(f"preserve threshold: {preserve_thres}")
             if (not self.preserve_all) and (len(all_synthetic_data) > preserve_thres):
                 all_synthetic_data = all_synthetic_data[-preserve_thres: ]
