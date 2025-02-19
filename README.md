@@ -14,11 +14,21 @@ Federated learning has become a promising solution for collaboration among medic
 
 
 
-Environment: see `requirements.yaml`
+Software Environment: see `requirements.yaml`
+
+Hardware Platform: Ubuntu with Geforce RTX 3090 GPU
+
+Supported datasets: {Path, OCT, OrganS, OranC, Pneumuonia)MNIST, CIFAR10, STL10, ImageNette.
+
+
 
 To run the code:
 
 ```bash
 bash run.sh
 ```
+
+
+
+
 
